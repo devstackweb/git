@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>盲选 - 别纠结了，让命运替你决定</title>
-<meta name="description" content="输入选项，一键盲选。今天吃什么、看什么电影、周末去哪，交给盲选帮你决定。">
+<title>芒选 - 别纠结了，让命运替你决定</title>
+<meta name="description" content="输入选项，一键芒选。今天吃什么、看什么电影、周末去哪，交给芒选帮你决定。">
 <style>
   :root{
     --bg:#08090d;
@@ -637,11 +637,11 @@
     <div class="marquee-track">
       <span><b>·</b> 别纠结了，让命运替你决定</span>
       <span><b>·</b> 今天吃什么？周末去哪？看什么电影？</span>
-      <span><b>·</b> 盲选不是瞎选，是把时间留给自己</span>
+      <span><b>·</b> 芒选不是瞎选，是把时间留给自己</span>
       <span><b>·</b> 选择困难症收容所 · mangxuan.cn</span>
       <span><b>·</b> 别纠结了，让命运替你决定</span>
       <span><b>·</b> 今天吃什么？周末去哪？看什么电影？</span>
-      <span><b>·</b> 盲选不是瞎选，是把时间留给自己</span>
+      <span><b>·</b> 芒选不是瞎选，是把时间留给自己</span>
       <span><b>·</b> 选择困难症收容所 · mangxuan.cn</span>
     </div>
   </div>
@@ -650,7 +650,7 @@
     <nav class="nav">
       <div class="logo">
         <div class="logo-mark">盲</div>
-        盲选 <em>mangxuan.cn</em>
+        芒选 <em>mangxuan.cn</em>
       </div>
       <div class="status-pill"><i></i> 命运引擎在线</div>
     </nav>
@@ -661,13 +661,13 @@
         别纠结了，
         <span class="line2">让命运替你决定。</span>
       </h1>
-      <p>输入选项，点一下，命运帮你选一个。今天吃什么、看什么电影、周末去哪，统统交给盲选。</p>
+      <p>输入选项，点一下，命运帮你选一个。今天吃什么、看什么电影、周末去哪，统统交给芒选。</p>
     </header>
 
     <main class="stage">
       <section class="card input-card">
         <div class="label">
-          <b>盲选池</b>
+          <b>芒选池</b>
           <span>每行一个 · 或用逗号隔开</span>
         </div>
 
@@ -718,7 +718,7 @@
       </div>
       <div class="mini">
         <strong>原则</strong>
-        <span>盲选不是瞎选，是把时间留给自己</span>
+        <span>芒选不是瞎选，是把时间留给自己</span>
       </div>
     </section>
 
@@ -755,7 +755,7 @@
     '大数据没有参与，纯靠缘分。',
     '再纠结就不礼貌了。',
     '听我的，就它了。',
-    '这是今天的盲选冠军。',
+    '这是今天的芒选冠军。',
     '别问为什么，问就是天意。'
   ];
 
@@ -906,7 +906,7 @@
       if (!presets[key]) return;
 
       optionsEl.value = presets[key];
-      statusEl.textContent = '已装填，点按钮开始盲选。';
+      statusEl.textContent = '已装填，点按钮开始芒选。';
       resultReason.textContent = '命运引擎待命中。';
 
       document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -917,7 +917,7 @@
   copyBtn.addEventListener('click', async () => {
     const winItem = reelStrip.querySelector('.reel-item.win');
     const resultText = winItem ? winItem.textContent : '（还没结果）';
-    const text = `盲选结果：${resultText}\n理由：${resultReason.textContent}\n来自 mangxuan.cn`;
+    const text = `芒选结果：${resultText}\n理由：${resultReason.textContent}\n来自 mangxuan.cn`;
 
     try {
       await navigator.clipboard.writeText(text);
